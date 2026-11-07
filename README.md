@@ -24,8 +24,14 @@ PERINTAH-PERINTAH DASAR (COMMANDS) YANG WAJIB DIINGAT
 'git push origin main': Mengunggah (upload) seluruh catatan *commit* dari laptop ke GitHub.
 'git pull origin main': Mengundah (download) perubahan terbaru yang ada di GitHub ke laptop.
 
-RINGKASAN PRAKTIK HARI INI 
-1. Kamu meminta bantuan AI untuk membuatkan kode dasar *Student Task Planner*
-2. Kamu membuat repositori Git lokal dengan 'git init'.
-3. Kamu mengunggah kode pertamamu ke GitHub memakai 'git add','git commit', dan 'git push'.
-4. Jika kamu ingin menambah fitur baru atau mengubah tampilan lewat AI, kamu tinggal mengulangi proses edit file -> 'git add' -> 'git commit' -> 'git push'.
+AKSESIBILITAS TAUTAN REPOSITORY (CARA MENGAKSES)
+part 1: Membuka website GitHub
+part 2: Masuk ke repositori ditiju, lalu klik tombol *dropdown* hijau bertuliskan "Code".
+part 3: Di sana tersedia pilihan aksesbilitas tautan, seperti menggunakan HTTPS atau SSH. Kamu tinggal menyalin (Copy) tauatan tersebut untuk digunakan terminal laptopmu dengan perintah 'git clone "url"'.
+
+VALIDITAS TAUTAN DAN KONEKSI (MEMASTIKAN TAUTAN SAH/VALID)
+
+Menggunakan SSH Key: Untuk memastikan aksesmu valid dan aman tanpa ketik password terus-menurus, kamu harus mendaftarkan kunci SSH komputer ke pengaturan GitHub (*SSH dan GPG Keys*).
+Perintah Validasi: Kamu bisa mengetikkan perintah ini di terminal untuk menguji apakah koneksimu ke GitHub sudah valid atau belum:
+Bash = ssh -T git@github.com
+Indikator Valid: Jika valid, terminal akan mengeluarkan pesan sukses: *"Hi username! You've successfully authenticated, but GitHub does not provide shell access"*
